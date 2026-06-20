@@ -436,6 +436,7 @@ body.has-cursor .cursor-glow { opacity: 1; }
 .sec-title {
   font-family: var(--f-serif); font-weight: 900;
   font-size: clamp(2rem, 5.5vw, 4rem); line-height: 1.05; color: var(--bone); letter-spacing: -0.01em;
+  word-break: keep-all;
 }
 .sec-title .accent { color: var(--blood-bright); }
 .sec-sub { margin-top: 1.4rem; color: var(--text-dim); font-size: 1.05rem; max-width: 60ch; }
