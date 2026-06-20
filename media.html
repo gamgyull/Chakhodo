@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미디어 / 제작 과정 — 착호도 (捉虎圖)</title>
+  <meta name="description" content="착호도의 트레일러, 스크린샷, 그리고 컨셉 아트부터 언리얼 엔진까지의 제작 과정." />
+  <meta name="theme-color" content="#0a0a0b" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/mark.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="착호도 홈">
+      <img class="mark" src="assets/img/mark.svg" alt="" />
+      <span>착호도<small>C H A K H O D O</small></span>
+    </a>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="index.html">HOME</a>
+      <a href="story.html">STORY</a>
+      <a href="characters.html">CHARACTERS</a>
+      <a href="media.html" class="active">MEDIA</a>
+      <a href="download.html">ABOUT</a>
+    </nav>
+    <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="page-hero" data-ghost="影">
+      <span class="eyebrow">03 — 영상과 제작 과정</span>
+      <h1 class="glitch" data-text="MEDIA">MEDIA</h1>
+      <p>예고편과 인게임 스크린샷, 그리고 컨셉 아트부터 언리얼 엔진까지 —<br>착호도가 만들어진 과정을 들여다봅니다.</p>
+    </section>
+
+    <!-- 트레일러 -->
+    <section class="section">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="num">／ TRAILER</span>
+          <h2 class="sec-title">공식 <span class="accent">트레일러</span></h2>
+          <p class="sec-sub">소리를 켜고 감상하시길 권합니다. 밤의 학교, 그 어둠과 소리를 미리 만나보세요.</p>
+        </div>
+
+        <!-- 트레일러 영상: 아래 source 의 src 만 실제 파일 경로로 바꾸면 됩니다. -->
+        <video
+          class="video-player reveal"
+          controls
+          preload="metadata"
+          playsinline
+          poster="assets/img/title-kor.avif"
+        >
+          <source src="assets/video/synopsis.mp4" type="video/mp4" />
+          브라우저가 video 태그를 지원하지 않습니다.
+        </video>
+        <p class="hand reveal" style="margin-top:1rem;">※ ‘assets/video/synopsis.mp4’ 파일이 이 자리에서 재생됩니다.</p>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- 스크린샷 갤러리 -->
+    <section class="section">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="num">／ SCREENSHOTS</span>
+          <h2 class="sec-title">밤의 <span class="accent">학교</span></h2>
+          <p class="sec-sub">이미지를 클릭하면 크게 볼 수 있습니다.</p>
+        </div>
+
+        <div class="media-grid">
+          <div class="shot span-8 reveal" data-lightbox data-caption="밤의 학교 — 봉인이 흔들리는 복도">
+            <img class="shot__img" src="assets/img/screenshots/school-1.png" alt="학교 복도 · 밤" loading="lazy" />
+            <button class="shot__zoom" aria-label="확대">＋</button>
+            <div class="shot__cap"><span>학교 복도</span><span>01</span></div>
+          </div>
+          <div class="shot span-4 reveal" data-d="1" data-lightbox data-caption="착호도 — 호귀를 봉인한 그림">
+            <img class="shot__img" src="assets/img/screenshots/school-2.png" alt="착호도 봉인" loading="lazy" />
+            <button class="shot__zoom" aria-label="확대">＋</button>
+            <div class="shot__cap"><span>착호도 봉인</span><span>02</span></div>
+          </div>
+
+          <div class="shot span-4 reveal" data-lightbox data-caption="해인의 흔적이 남은 교무실">
+            <img class="shot__img" src="assets/img/screenshots/school-3.png" alt="해인의 흔적" loading="lazy" />
+            <button class="shot__zoom" aria-label="확대">＋</button>
+            <div class="shot__cap"><span>해인의 흔적</span><span>03</span></div>
+          </div>
+          <div class="shot span-4 reveal" data-d="1" data-lightbox data-caption="악귀와의 1인칭 전투">
+            <img class="shot__img" src="assets/img/screenshots/school-4.png" alt="악귀 · FPS 전투" loading="lazy" />
+            <button class="shot__zoom" aria-label="확대">＋</button>
+            <div class="shot__cap"><span>FPS 전투</span><span>04</span></div>
+          </div>
+          <div class="shot span-4 reveal" data-d="2" data-lightbox data-caption="어둠이 고인 교실">
+            <img class="shot__img" src="assets/img/screenshots/school-5.png" alt="교실" loading="lazy" />
+            <button class="shot__zoom" aria-label="확대">＋</button>
+            <div class="shot__cap"><span>교실</span><span>05</span></div>
+          </div>
+
+          <div class="shot span-12 reveal" data-lightbox data-caption="호귀 — 무너진 봉인 너머의 대치">
+            <img class="shot__img" src="assets/img/screenshots/school-6.png" alt="호귀 · 보스 대치" loading="lazy" />
+            <button class="shot__zoom" aria-label="확대">＋</button>
+            <div class="shot__cap"><span>호귀와의 대치</span><span>06</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- 제작 과정 -->
+    <section class="section">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="num">／ PRODUCTION PROCESS</span>
+          <h2 class="sec-title">제작 <span class="accent">과정</span></h2>
+          <p class="sec-sub">컨셉 아트부터 언리얼 엔진 빌드까지, 착호도가 완성되어 온 파이프라인입니다. 썸네일을 클릭하면 크게 볼 수 있습니다.</p>
+        </div>
+
+        <!-- 각 카테고리는 좌우로 넘기는 슬라이드입니다.
+             이미지 교체: 각 .cslide 안의 <div class="ph"> 를 <img src="assets/img/process/파일명.png" alt="설명"> 로 바꾸면 됩니다. -->
+
+        <!-- 01 · 컨셉 아트 (8장) -->
+        <div class="carousel reveal">
+          <div class="carousel__bar"><span class="carousel__name">01 · 컨셉 아트</span><span class="carousel__tool">CLIP STUDIO PAINT</span></div>
+          <div class="carousel__frame">
+            <button type="button" class="carousel__nav prev" aria-label="이전">‹</button>
+            <div class="carousel__track">
+              <figure class="cslide" data-lightbox data-caption="컨셉 아트 01"><img src="assets/img/process/concept-1.png" alt="컨셉 아트 01" loading="lazy" /></figure>
+              <figure class="cslide" data-lightbox data-caption="컨셉 아트 02"><img src="assets/img/process/concept-2.png" alt="컨셉 아트 02" loading="lazy" /></figure>
+              <figure class="cslide" data-lightbox data-caption="컨셉 아트 03"><img src="assets/img/process/concept-3.png" alt="컨셉 아트 03" loading="lazy" /></figure>
+              <figure class="cslide" data-lightbox data-caption="컨셉 아트 04"><img src="assets/img/process/concept-4.png" alt="컨셉 아트 04" loading="lazy" /></figure>
+              <figure class="cslide" data-lightbox data-caption="컨셉 아트 05"><img src="assets/img/process/concept-5.png" alt="컨셉 아트 05" loading="lazy" /></figure>
+              <figure class="cslide" data-lightbox data-caption="컨셉 아트 06"><img src="assets/img/process/concept-6.png" alt="컨셉 아트 06" loading="lazy" /></figure>
+              <figure class="cslide" data-lightbox data-caption="컨셉 아트 07"><img src="assets/img/process/concept-8.png" alt="컨셉 아트 07" loading="lazy" /></figure>
+              <figure class="cslide" data-lightbox data-caption="컨셉 아트 08"><img src="assets/img/process/concept-9.png" alt="컨셉 아트 08" loading="lazy" /></figure>
+            </div>
+            <button type="button" class="carousel__nav next" aria-label="다음">›</button>
+          </div>
+          <div class="carousel__count"><span class="cur">1</span> / <span class="total">8</span></div>
+        </div>
+
+        <!-- 02 · 스토리보드 (5장) -->
+        <div class="carousel reveal">
+          <div class="carousel__bar"><span class="carousel__name">02 · 스토리보드 / 애니매틱스</span><span class="carousel__tool">CSP · PREMIERE</span></div>
+          <div class="carousel__frame">
+            <button type="button" class="carousel__nav prev" aria-label="이전">‹</button>
+            <div class="carousel__track">
+              <figure class="cslide" data-lightbox data-caption="스토리보드 01"><img src="assets/img/process/story-1.png" alt="스토리보드 01" loading="lazy" /></figure>
+              <figure class="cslide" data-lightbox data-caption="스토리보드 02"><img src="assets/img/process/story-2.png" alt="스토리보드 02" loading="lazy" /></figure>
+              <figure class="cslide" data-lightbox data-caption="스토리보드 03"><img src="assets/img/process/story-3.png" alt="스토리보드 03" loading="lazy" /></figure>
+              <figure class="cslide" data-lightbox data-caption="스토리보드 04"><img src="assets/img/process/story-4.png" alt="스토리보드 04" loading="lazy" /></figure>
+              <figure class="cslide" data-lightbox data-caption="스토리보드 05"><img src="assets/img/process/story-5.png" alt="스토리보드 05" loading="lazy" /></figure>
+            </div>
+            <button type="button" class="carousel__nav next" aria-label="다음">›</button>
+          </div>
+          <div class="carousel__count"><span class="cur">1</span> / <span class="total">5</span></div>
+        </div>
+
+        <!-- 03 · 모델링 (6장) -->
+        <div class="carousel reveal">
+          <div class="carousel__bar"><span class="carousel__name">03 · 캐릭터 모델링</span><span class="carousel__tool">ZBRUSH</span></div>
+          <div class="carousel__frame">
+            <button type="button" class="carousel__nav prev" aria-label="이전">‹</button>
+            <div class="carousel__track">
+              <figure class="cslide" data-lightbox data-caption="모델링 01"><img src="assets/img/process/model-1.png" alt="모델링 01" loading="lazy" /></figure>
+              <figure class="cslide" data-lightbox data-caption="모델링 02"><img src="assets/img/process/model-2.png" alt="모델링 02" loading="lazy" /></figure>
+              <figure class="cslide" data-lightbox data-caption="모델링 03"><img src="assets/img/process/model-3.png" alt="모델링 03" loading="lazy" /></figure>
+              <figure class="cslide" data-lightbox data-caption="모델링 04"><img src="assets/img/process/model-4.png" alt="모델링 04" loading="lazy" /></figure>
+              <figure class="cslide" data-lightbox data-caption="모델링 05"><img src="assets/img/process/model-5.png" alt="모델링 05" loading="lazy" /></figure>
+              <figure class="cslide" data-lightbox data-caption="모델링 06"><img src="assets/img/process/model-6.png" alt="모델링 06" loading="lazy" /></figure>
+            </div>
+            <button type="button" class="carousel__nav next" aria-label="다음">›</button>
+          </div>
+          <div class="carousel__count"><span class="cur">1</span> / <span class="total">6</span></div>
+        </div>
+
+        <!-- 04 · 리깅 (4장) -->
+        <div class="carousel reveal">
+          <div class="carousel__bar"><span class="carousel__name">04 · 캐릭터 리깅</span><span class="carousel__tool">MAYA</span></div>
+          <div class="carousel__frame">
+            <button type="button" class="carousel__nav prev" aria-label="이전">‹</button>
+            <div class="carousel__track">
+              <figure class="cslide" data-lightbox data-caption="리깅 01"><img src="assets/img/process/rig-1.png" alt="리깅 01" loading="lazy" /></figure>
+              <figure class="cslide" data-lightbox data-caption="리깅 02"><img src="assets/img/process/rig-2.png" alt="리깅 02" loading="lazy" /></figure>
+              <figure class="cslide" data-lightbox data-caption="리깅 03"><img src="assets/img/process/rig-3.png" alt="리깅 03" loading="lazy" /></figure>
+              <figure class="cslide" data-lightbox data-caption="리깅 04"><img src="assets/img/process/rig-4.png" alt="리깅 04" loading="lazy" /></figure>
+            </div>
+            <button type="button" class="carousel__nav next" aria-label="다음">›</button>
+          </div>
+          <div class="carousel__count"><span class="cur">1</span> / <span class="total">4</span></div>
+        </div>
+
+        <!-- 05 · 엔진 / 레벨 / Niagara (5장) -->
+        <div class="carousel reveal">
+          <div class="carousel__bar"><span class="carousel__name">05 · 레벨 / 엔진 / Niagara</span><span class="carousel__tool">UNREAL ENGINE</span></div>
+          <div class="carousel__frame">
+            <button type="button" class="carousel__nav prev" aria-label="이전">‹</button>
+            <div class="carousel__track">
+              <figure class="cslide" data-lightbox data-caption="레벨 01"><img src="assets/img/process/engine-1.png" alt="레벨 01" loading="lazy" /></figure>
+              <figure class="cslide" data-lightbox data-caption="레벨 02"><img src="assets/img/process/engine-2.png" alt="레벨 02" loading="lazy" /></figure>
+              <figure class="cslide" data-lightbox data-caption="레벨 03"><img src="assets/img/process/engine-3.png" alt="레벨 03" loading="lazy" /></figure>
+              <figure class="cslide" data-lightbox data-caption="레벨 04"><img src="assets/img/process/engine-4.png" alt="레벨 04" loading="lazy" /></figure>
+              <figure class="cslide" data-lightbox data-caption="레벨 05"><img src="assets/img/process/engine-5.png" alt="레벨 05" loading="lazy" /></figure>
+            </div>
+            <button type="button" class="carousel__nav next" aria-label="다음">›</button>
+          </div>
+          <div class="carousel__count"><span class="cur">1</span> / <span class="total">5</span></div>
+        </div>
+
+        <p class="hand reveal" style="margin-top:1rem;">※ 각 카테고리는 좌우 화살표(또는 터치 스와이프)로 넘길 수 있습니다. 슬롯에 실제 작업 이미지를 넣어 교체하세요.</p>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <section class="section section--tight">
+      <div class="wrap" style="text-align:center;">
+        <p class="hand reveal" style="margin-bottom:1.4rem;">함께 만들고 싶다면, 언제든 연락 주세요.</p>
+        <a href="download.html" class="btn btn--solid reveal" data-d="1">프로젝트 정보 · 문의 <span class="arrow">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <img class="mark" src="assets/img/mark.svg" alt="" />
+          <span>착호도<small>C H A K H O D O</small></span>
+        </a>
+        <p>가업과 비교당해 상처받은 해인, 그녀를 쫓아 밤의 학교로 — 호귀를 봉인한 ‘착호도’를 둘러싼 3D 스타일라이즈드 FPS. 졸업전시 작품입니다.</p>
+      </div>
+      <div class="foot-col">
+        <h5>둘러보기</h5>
+        <a href="story.html">스토리 / 시놉시스</a>
+        <a href="characters.html">등장인물 / 귀신</a>
+        <a href="media.html">미디어 / 제작 과정</a>
+        <a href="download.html">프로젝트 / 문의</a>
+      </div>
+      <div class="foot-col">
+        <h5>팔로우</h5>
+        <a href="#" rel="noopener">YouTube</a>
+        <a href="#" rel="noopener">Instagram</a>
+        <a href="#" rel="noopener">ArtStation</a>
+        <a href="download.html">문의 / Contact</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span data-year>2026</span> 착호도 (捉虎圖) — ai Chai University 졸업전시</span>
+      <span>MAKE YOUR IMAGINATION A REALITY</span>
+    </div>
+  </footer>
+
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="이미지 확대">
+    <button class="lightbox__close" aria-label="닫기">✕</button>
+    <div class="lightbox__inner">
+      <div class="lightbox__cap"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

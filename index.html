@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>착호도 (捉虎圖 · Chakhodo) — 3D 스타일라이즈드 FPS</title>
+  <meta name="description" content="인정받고 싶었던 해인이 풀어버린 학교의 봉인 '착호도'. 호귀(虎鬼)가 깨어난 밤의 학교에서 펼쳐지는 3D 스타일라이즈드 FPS — 졸업전시 작품." />
+  <meta name="theme-color" content="#0a0a0b" />
+  <meta property="og:title" content="착호도 (捉虎圖 · Chakhodo)" />
+  <meta property="og:description" content="밤의 학교, 호귀의 봉인 — 3D 스타일라이즈드 FPS" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/mark.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- 분위기 레이어 -->
+  <div class="grain" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- 헤더 -->
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="착호도 홈">
+      <img class="mark" src="assets/img/mark.svg" alt="" />
+      <span>착호도<small>C H A K H O D O</small></span>
+    </a>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="index.html" class="active">HOME</a>
+      <a href="story.html">STORY</a>
+      <a href="characters.html">CHARACTERS</a>
+      <a href="media.html">MEDIA</a>
+      <a href="download.html">ABOUT</a>
+    </nav>
+    <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- 히어로 -->
+    <section class="hero hero--center">
+      <!-- 배경 동영상: assets/video/bg.mp4 (선택: bg.webm) 을 넣으면 자동 반복 재생됩니다. -->
+      <div class="hero__video-wrap" aria-hidden="true">
+        <video class="hero__video" autoplay loop muted playsinline preload="auto">
+          <source src="assets/video/bg.mp4" type="video/mp4" />
+          <source src="assets/video/bg.webm" type="video/webm" />
+        </video>
+      </div>
+      <div class="hero__bg" aria-hidden="true"></div>
+      <span class="eyebrow hero__tag">3D 스타일라이즈드 FPS · 시네마틱 · 졸업전시</span>
+
+      <!-- 세로 3중 제목: 한글(이미지) · 한자(번체) · 영문(필기) -->
+      <div class="title-scroll">
+        <h1 class="title-stack" aria-label="착호도 (捉虎圖, Chakhodo)">
+          <!-- 한자+영어 제목 이미지 (배경 레이어, 빨강) -->
+          <picture class="t-back-pic">
+            <source srcset="assets/img/title-hanja-en.avif" type="image/avif" />
+            <img class="t-back-img" src="assets/img/title-hanja-en.png" alt="捉虎圖 Chakhodo"
+                 onerror="this.style.visibility='hidden';" />
+          </picture>
+          <!-- 한글 붓글씨 이미지 (전면 레이어, 흰색) -->
+          <picture class="t-kor-pic">
+            <source srcset="assets/img/title-kor.avif" type="image/avif" />
+            <img class="t-kor-img" src="assets/img/title-kor.png" alt="착호도"
+                 onerror="this.style.display='none';" />
+          </picture>
+        </h1>
+      </div>
+
+      <p class="hero__lede">
+        가업을 물려받은 <strong>경필</strong>, 그리고 인정받고 싶었던 <strong>해인</strong>.<br>
+        그녀가 홀로 풀어버린 학교의 봉인 — <strong>착호도(捉虎圖)</strong> 속에서, 호귀(虎鬼)가 깨어난다.<br>
+        밤의 학교를 무대로 한 3D 스타일라이즈드 FPS.
+      </p>
+      <div class="hero__cta">
+        <a href="media.html" class="btn btn--solid">트레일러 보기 <span class="arrow">→</span></a>
+        <a href="story.html" class="btn">이야기 보기 <span class="arrow">→</span></a>
+      </div>
+      <div class="hero__meta">
+        <span><span class="dot"></span>GRADUATION EXHIBITION</span>
+        <span>UNREAL ENGINE · 3D STYLIZED FPS</span>
+        <span>ai Chai University · Game &amp; Animation</span>
+      </div>
+      <div class="scroll-hint">SCROLL</div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- 시놉시스 요약 -->
+    <section class="section">
+      <div class="wrap">
+        <div class="prose-grid">
+          <div class="reveal">
+            <span class="eyebrow">시놉시스 · SYNOPSIS</span>
+            <h2 class="sec-title" style="margin-top:1.2rem;">
+              인정받고 싶었던 마음이,<br><span class="accent">봉인을 풀었다</span>
+            </h2>
+            <p class="hand" style="margin-top:1.5rem;">“혼자서라도, 인정받고 싶었다.”</p>
+          </div>
+          <div class="prose reveal" data-d="1">
+            <p class="lead">조모의 장례식, 가업을 물려받은 경필과 비교당하며 해인은 상처받는다. 모두에게 인정받고 싶었던 그녀는 쪽지 한 장만 남긴 채, 홀로 학교에 잠든 호귀의 봉인 ‘착호도’를 풀러 향한다.</p>
+            <p>뒤늦게 쪽지를 전해 듣고 밤의 학교로 달려간 경필. 해인을 위협하는 악귀들을 차례로 격퇴하며 그녀의 흔적을 쫓지만 — <strong>해인의 서툰 주술이 오히려 귀신들을 끌어들여, 봉인을 무너뜨리는 화근이 되었음</strong>을 깨닫는다.</p>
+            <p><a href="story.html" class="btn btn--ghost" style="padding-left:0;">전체 시놉시스 보기 <span class="arrow">→</span></a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- 섹션 안내(다른 페이지로) -->
+    <section class="section">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="num">／ EXPLORE</span>
+          <h2 class="sec-title">THE DOSSIER / 프로젝트 기록</h2>
+        </div>
+
+        <div class="media-grid">
+          <a href="story.html" class="shot span-6 reveal" aria-label="스토리 / 시놉시스">
+            <div class="ph" data-label="STORY · 시놉시스"></div>
+            <div class="shot__cap"><span>01 — 이야기와 설정</span><span>STORY →</span></div>
+          </a>
+          <a href="characters.html" class="shot span-6 reveal" data-d="1" aria-label="등장인물 / 귀신">
+            <div class="ph" data-label="CHARACTERS · 등장인물"></div>
+            <div class="shot__cap"><span>02 — 마주칠 존재들</span><span>CHARACTERS →</span></div>
+          </a>
+          <a href="media.html" class="shot span-6 reveal" aria-label="미디어 / 트레일러 / 제작과정">
+            <div class="ph" data-label="MEDIA · 트레일러 · 제작 과정"></div>
+            <div class="shot__cap"><span>03 — 영상과 제작 과정</span><span>MEDIA →</span></div>
+          </a>
+          <a href="download.html" class="shot span-6 reveal" data-d="1" aria-label="프로젝트 정보 / 문의">
+            <div class="ph" data-label="ABOUT · 정보 · 문의"></div>
+            <div class="shot__cap"><span>04 — 프로젝트와 문의</span><span>ABOUT →</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- 문의 / 협업 CTA -->
+    <section class="section">
+      <div class="wrap">
+        <div class="dl-panel reveal">
+          <span class="eyebrow" style="justify-content:center;">GRADUATION EXHIBITION · 2026</span>
+          <h2 style="margin-top:1.2rem;">상상을 현실로,<br>착호도와 함께</h2>
+          <p>프로젝트 협업과 채용 문의를 기다립니다. 혁신적인 3D 스타일과 독창적인 세계관을 함께 만들 분이라면 언제든 연락 주세요.</p>
+          <div class="dl-buttons">
+            <a href="media.html" class="btn btn--solid">프로젝트 영상 보기 <span class="arrow">→</span></a>
+            <a href="download.html" class="btn">문의하기 <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <img class="mark" src="assets/img/mark.svg" alt="" />
+          <span>착호도<small>C H A K H O D O</small></span>
+        </a>
+        <p>가업과 비교당해 상처받은 해인, 그녀를 쫓아 밤의 학교로 — 호귀를 봉인한 ‘착호도’를 둘러싼 3D 스타일라이즈드 FPS. 졸업전시 작품입니다.</p>
+      </div>
+      <div class="foot-col">
+        <h5>둘러보기</h5>
+        <a href="story.html">스토리 / 시놉시스</a>
+        <a href="characters.html">등장인물 / 귀신</a>
+        <a href="media.html">미디어 / 제작 과정</a>
+        <a href="download.html">프로젝트 / 문의</a>
+      </div>
+      <div class="foot-col">
+        <h5>팔로우</h5>
+        <a href="#" rel="noopener">YouTube</a>
+        <a href="#" rel="noopener">Instagram</a>
+        <a href="#" rel="noopener">ArtStation</a>
+        <a href="download.html">문의 / Contact</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span data-year>2026</span> 착호도 (捉虎圖) — ai Chai University 졸업전시</span>
+      <span>MAKE YOUR IMAGINATION A REALITY</span>
+    </div>
+  </footer>
+
+  <!-- 라이트박스 -->
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="이미지 확대">
+    <button class="lightbox__close" aria-label="닫기">✕</button>
+    <div class="lightbox__inner">
+      <div class="lightbox__cap"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
